@@ -1,0 +1,2 @@
+class JapanCity < ApplicationRecord
+end
