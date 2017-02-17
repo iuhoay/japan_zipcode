@@ -1,2 +1,2 @@
-class JapanCity < ApplicationRecord
+class JapanCity < ActiveRecord::Base
 end
