@@ -1,5 +1,5 @@
-require "japan_zipcode/engine"
+require 'japan_zipcode/engine'
+require 'japan_zipcode/model'
 
 module JapanZipcode
-  # Your code goes here...
 end

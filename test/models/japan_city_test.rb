@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class JapanCityTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test 'work' do
+    city = create :japan_city
+    assert_kind_of JapanCity, city
+  end
 end
