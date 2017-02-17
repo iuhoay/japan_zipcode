@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["iuhoay@gmail.com"]
   s.homepage    = "https://github.com/iuhoay/japan_zipcode"
   s.summary     = "Japan Zipcode"
-  s.description = "Japan Zipcode"
+  s.description = "This is a Rails engine for Japanese cities by zipcode."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
