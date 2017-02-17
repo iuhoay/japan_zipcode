@@ -1,28 +1,39 @@
-# JapanZipcode
+# Japan zipcode
 
 [![Gem Version](https://badge.fury.io/rb/japan_zipcode.svg)](https://badge.fury.io/rb/japan_zipcode)
 [![Build Status](https://travis-ci.org/iuhoay/japan_zipcode.svg?branch=master)](https://travis-ci.org/iuhoay/japan_zipcode)
 
+This is a Rails engine for Japanese cities by zipcode.
+
 ## Usage
+
+You can add it to your Gemfile with:
 
 ```ruby
 gem 'japan_zipcode'
 ```
 
-and run `bundle install`
+Then run `bundle install`
 
-Generate Migrations:
+Next, you need to run the generator:
 
 ```bash
-$ rake japan_zipcode:install:migrations
+$ rails g japan_zipcode:install
 ```
 
-and run `rails db:migrate`
+Then run `rails db:migrate`
 
-Fill data:
+Last, fill in cities to the database:
 
 ```bash
 $ rake japan_zipcode_data
+```
+
+#### Get city
+
+```ruby
+JapanCity.get('1510053')
+=> #<JapanCity id: 39560, zipcode: "1510053", town: "東京都", city: "渋谷区", prefecture: "代々木", created_at: "2017-02-17 08:46:21", updated_at: "2017-02-17 08:46:21">
 ```
 
 ## License
