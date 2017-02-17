@@ -1,28 +1,28 @@
 # JapanZipcode
-Short description and motivation.
+
+[![Gem Version](https://badge.fury.io/rb/japan_zipcode.svg)](https://badge.fury.io/rb/japan_zipcode)
 
 ## Usage
-How to use my plugin.
-
-## Installation
-Add this line to your application's Gemfile:
 
 ```ruby
 gem 'japan_zipcode'
 ```
 
-And then execute:
+and run `bundle install`
+
+Generate Migrations:
+
 ```bash
-$ bundle
+$ rake japan_zipcode:install:migrations
 ```
 
-Or install it yourself as:
-```bash
-$ gem install japan_zipcode
-```
+and run `rails db:migrate`
 
-## Contributing
-Contribution directions go here.
+Fill data:
+
+```bash
+$ rake japan_zipcode_data
+```
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

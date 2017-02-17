@@ -112,7 +112,7 @@ PLATFORMS
 
 DEPENDENCIES
   japan_zipcode!
-  mysql2
+  mysql2 (~> 0.4)
 
 BUNDLED WITH
    1.13.6
