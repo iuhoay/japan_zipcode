@@ -8,7 +8,7 @@ rvm:
 
 before_script:
   - bundle install
-  - RAILS_ENV=test bundle exec rake db:create
-  - RAILS_ENV=test bundle exec rake db:migrate
+  - RAILS_ENV=test bundle exec rails db:create
+  - RAILS_ENV=test bundle exec rails db:migrate
 
 script: RAILS_ENV=test bundle exec rails test
