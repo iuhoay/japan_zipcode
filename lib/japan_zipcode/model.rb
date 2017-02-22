@@ -4,8 +4,7 @@ module JapanZipcode
 
     included do
       def full_name
-        "#{city}#{town}"
-        "#{town}"
+        "#{town}#{city}#{prefecture}"
       end
     end
 
