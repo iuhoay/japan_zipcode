@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v3
     - uses: actions/setup-ruby@v1
       with:
-        ruby-version: '3.0'
+        ruby-version: '2.6.2'
         bundler-cache: true
 
     - name: Publish to GPR
